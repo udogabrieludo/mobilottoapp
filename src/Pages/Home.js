@@ -89,11 +89,11 @@ const Home = () => {
       {/* End Hero */}
       <main id="main">
         <div className="main-hero">
-        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img className="d-block w-100" src="/images/img-bg.png" alt="First slide"  />
-    </div>
+        <div id="carouselExampleControls" className="carousel slide hero-slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100" src="/images/img-bg.png" alt="First slide"  />
+            </div>
    {/*  <div className="carousel-item">
       <img className="d-block w-100" src="..." alt="Second slide" />
     </div>
@@ -137,7 +137,7 @@ const Home = () => {
 </div>
         </div>
 
-        <div id="featured-services " className="featured-services">
+        <div id="featured-services " className="featured-services result-list">
           <div className="container mb-3 pt-5 d-flex justify-content-between  text-white">
             <div className="text-uppercase">Top Games</div>
             <div className="">

@@ -8,7 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('http://fonts.cdnfonts.com/css/cunia');
+@import url('https://fonts.cdnfonts.com/css/cunia');
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -425,7 +425,9 @@ About Us
   -ms-border-radius: 200px;
   -o-border-radius: 200px;
 } */
-
+.hero-slide{
+  padding-top: 2rem !important;
+}
 .hero-bodycontent {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
@@ -438,9 +440,9 @@ About Us
 
 }
 .hero-bodycontent .next-draw{
- border-left:2px solid #000;
+ border-left:2px solid #dee2e6;
  padding-left: 6rem;
-border-right: 2px solid #000;
+border-right: 2px solid #dee2e6;
  padding-right: 6rem;
  
  
@@ -2487,12 +2489,43 @@ background:#BA0B0B !important;
   background: #dc354594;
   color: #fff;
 }
+@media (max-width:800px){
+  .hero-bodycontent .next-draw {
+     border-left: 0px solid #000; 
+    padding-left: 6rem;
+    border-right: 0px solid #000;
+    padding-right: 6rem;
+}
+.playnow {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.playnow-content {
+  background: #0080004f;
+  width: 40%;
+ 
+}
+}
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
     float: none;
     text-align: center;
     padding: 2px 0;
   }
+  .playnow {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .playnow-content {
+    background: #0080004f;
+    width: 50%;
+   
+  }
+  
 }
 @media (max-width:480px){
 
@@ -2500,14 +2533,14 @@ background:#BA0B0B !important;
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     padding: 1.2rem;
-    border: 1px solid #F1F1F1;
+    /* border: 1px solid #F1F1F1;
     box-sizing: border-box;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 1rem;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05); */
+   /*  border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    -o-border-radius: 1rem; */
 }
   .hero-bodycontent .next-draw {
      border-left: 0px solid #000;
@@ -2533,12 +2566,20 @@ background:#BA0B0B !important;
   font-weight: 800 !important;
   font-family: poppins;
 }
-pr{
-  padding: 15px !important;
-}
 
 .pl{
   padding: 15px !important;
+}
+.playnow {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.playnow-content {
+  background: #0080004f;
+  width: 100%;
+ 
 }
 }
 
