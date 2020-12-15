@@ -1,0 +1,376 @@
+@import url('http://fonts.cdnfonts.com/css/cunia');
+/* Accordion */
+
+.accordion{
+  border-top: 2px solid #d3d3d369;
+     
+}
+.accordion-header{
+    padding: 1rem;
+
+  }
+  .accordion-header:hover{
+    background: #e9ecef8a;
+    cursor: pointer;
+  }
+
+.accordion-body p{
+   
+    padding: 1rem;
+}  
+
+/* Modal */
+.modal-box{
+position: fixed;
+display: flex;
+justify-content: center;
+align-items : center;
+width:100%;
+height:100%;
+top:0;
+left:0;
+right:0;
+bottom: 0;
+background-color: rgba(34, 34, 34, 0.7);
+
+
+z-index: 9999;
+
+
+}
+.modal-wrapper{
+  width:800px;
+  height: 500px;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.2);
+  background:#fff;
+  color:#000;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index:10;
+  border-radius:5px;
+}
+.closeModal{
+    position: absolute;
+    top: -10px;
+    right: -10px;  
+    background:#fff;
+    border-radius: 50%;
+    padding: 3px 10.5px;
+    box-shadow: 0px 0px 3px 3px rgb(140 140 140 / 20%);
+    cursor: pointer;
+}
+
+.img-wrapper{
+  padding: .8rem;
+  box-sizing: border-box;
+  text-align: -webkit-center;
+  border: 4px solid transparent;
+}
+.img-wrapper:hover{
+  
+  border: 4px solid #BA0B0B;
+  padding: .8rem;
+  box-sizing: border-box;
+  text-align: -webkit-center;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  cursor: pointer;
+}
+.img-box img{
+  width: 230px;
+  height:210px;
+  object-fit: cover;
+
+}
+.modal-button{
+  width: 100%;
+  padding: 15px 5px;
+  background: #BA0B0B;
+  color:#fff !important;
+  font-family: cunia;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.modalpop-title{
+ padding:2rem 0;
+ border-top: 2px solid rgba(0,0,0,.2);
+}
+.modalpop-title h5{
+  font-family: cunia;
+ color:#000
+}
+
+/* The radio */
+.radio {
+ 
+  display: block;
+ position: relative;
+ padding-left: 30px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 20px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+
+ position: absolute;
+ top: 6px;
+ left: 0;
+ height: 20px;
+ width: 20px;
+ background-color: #fff ;
+ border-color:#BA0B0B;
+ border-style:solid;
+ border-width:2px;
+  border-radius: 50%;
+ 
+}
+
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+ background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+  left: 2px;
+ top: 2px;
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ background:#BA0B0B;
+ 
+
+}
+
+/* The check */
+.check {
+ display: block;
+ position: relative;
+ padding-left: 25px;
+ margin-bottom: 12px;
+ padding-right: 15px;
+ cursor: pointer;
+ font-size: 18px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+ position: absolute;
+ top: 3px;
+ left: 0;
+ height: 18px;
+ width: 18px;
+ background-color: #fff ;
+ border-color:#BA0B0B;
+ border-style:solid;
+ border-width:2px;
+}
+
+
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+ background-color: #fff  ;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+ left: 5px;
+ top: 1px;
+ width: 5px;
+ height: 10px;
+ border: solid ;
+ border-color:#BA0B0B;
+ border-width: 0 3px 3px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+
+/* .cust-btn{
+margin-bottom: 10px;
+background-color: #f8204f;
+border-width: 2px;
+border-color: #f8204f;
+color: #fff;
+}
+.cust-btn:hover{
+
+border-color: #f8204f;
+background-color: #fff;
+color: #f8204f;
+border-radius: 20px;
+transform-style: 2s;
+
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BA0B0B; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(150, 7, 7); 
+}
+
+.countdown-wrapperx {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 -8px 0 -8px;
+}
+.countdown-wrappers {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 -8px 0 -8px;
+}
+
+.countdown-wrappers .time-section {
+  padding: 0px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #f9f5f5 !important;
+}
+.countDisplay{
+  width: 50px;
+  border: 1px solid #d3d3d3;
+  margin: 0px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  height: 38px;
+
+}
+.btn-danger {
+  color: #fff;
+  background-color: #ba0b0b !important;
+  border-color: #ba0b0b;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.cart-box{
+  border-bottom: 2px solid #d3d3d3b5;
+  padding-bottom: 1rem;
+}
+.cart-box1{
+  padding-top: 1rem;
+}
+
+
+.multi-draws {
+  padding: 30px 0;
+  overflow: hidden;
+  background: #ba0b0b17;
+}
+.text-danger{
+  color:#ba0b0b  !important;
+}
+
+
+.select-form{
+  background: transparent;
+    
+    border: 1px solid #716f6f;
+ 
+  
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 15px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  
+  border-radius: 2px;
+ 
+  padding: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 600;
+}
+
+.select-form:focus{
+  background: transparent;
+    padding: 1rem;
+    border: 1px solid #716f6f;
+    outline-width: 0;
+}
+
+
+
+.border-top {
+  border-top: 2px solid #dee2e6!important;
+}
+
+
+
+
+

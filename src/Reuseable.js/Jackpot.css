@@ -1,0 +1,219 @@
+
+.jackpot {
+    width: 100%;
+    height: 70vh;
+    background: url(/images/herobg.svg);
+    background-repeat: repeat;
+    padding-top: 10rem;
+}
+.jackpot-header h1{
+    font-size: 5.7rem;
+}
+.jackpot-header small{
+    font-weight: 600;
+}
+.nav-tabs .nav-item {
+    margin: 2px;
+}
+.nav-tabs .nav-link.active {
+    /* color: #AD1519 !important; */
+    background-color: #fff;
+    border-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0rem;
+
+    /* color: #fff !important; */
+    background: transparent;
+    border: 2px solid #fff;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.nav-tabs .nav-link:hover{
+    cursor: pointer;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e600;
+}
+.is-active{
+    background:#fff !important; color:#AD1519 !important;
+    border-radius:0rem ;
+    -webkit-border-radius:0rem ;
+    -moz-border-radius:0rem ;
+    -ms-border-radius:0rem ;
+    -o-border-radius:0rem ;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    font-family: 'Poppins';
+    padding: .5rem 1rem;
+}
+.not-active{
+    background:transparent !important;
+    color:#fff !important;
+    border: 2px solid #fff;
+    border-radius:0rem ;
+    -webkit-border-radius:0rem ;
+    -moz-border-radius:0rem ;
+    -ms-border-radius:0rem ;
+    -o-border-radius:0rem ;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: .5rem 1rem;
+}
+.tab-list li {
+    line-height: 2.9 !important;
+}
+.tab-list li a:hover{
+    cursor: pointer;
+    
+}
+ .result-check .fill-color-outline{
+    background: transparent !important;
+    border: 1px solid #49A35A;
+    color:#000;
+}
+.resultbg{
+    width: 100%;
+    height: 3vh;
+    padding: 40px 0px !important;
+    background: url(/images/herobg.svg);
+    background-repeat: repeat;  
+}
+.result-check .list-inline-item {
+    width: 30px;
+    height: 30px;
+    background: #49A35A;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: auto;
+    color: #000;
+    font-weight: 600;
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+
+input[type='checkbox']{
+    width: 15px !important;
+    height: 15px !important;
+   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    box-shadow: none;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1em;
+    background: #ba0b0b;
+    outline:2px solid #ba0b0b ;
+    outline-offset: -2px;
+  }
+  
+  input[type='checkbox']:checked:after {
+    content: '✔';
+    color: #fff;
+    line-height: 1em;
+    width: 15px !important;
+    height: 15px !important;
+   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    box-shadow: none;
+    font-size: 0.8em;
+    text-align: center;
+   
+   
+  }
+
+  .outline{
+    border: 2px solid #ba0b0b;
+    text-align: center;
+  }
+
+
+  /*  RADIO BUTTON */
+
+
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]+label:before {
+  content: "";
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin-right: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #ba0b0b;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked + label:before {
+  background-color: #ba0b0b;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+label {
+  display: flex;
+  align-items: center;
+}
+@media (max-width : 1024px){
+ 
+.jackpot {
+    width: 100%;
+    height: 40vh;
+    background: url(/images/herobg.svg);
+    background-repeat: repeat;
+    padding-top: 10rem;
+}
+}
+
+@media (max-width : 768px){
+ 
+    .jackpot {
+        width: 100%;
+        height: 50vh;
+        background: url(/images/herobg.svg);
+        background-repeat: repeat;
+        padding-top: 10rem;
+    }
+    }
+  
+    @media (max-width : 540px){
+ 
+        .jackpot {
+            width: 100%;
+            height: 70vh;
+            background: url(/images/herobg.svg);
+            background-repeat: repeat;
+            padding-top: 10rem;
+        }
+        }

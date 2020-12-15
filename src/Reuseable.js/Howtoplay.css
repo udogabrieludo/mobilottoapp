@@ -1,0 +1,57 @@
+.howtoplay{
+    border: 1px solid #b3b0b0;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+.howtoplay .thead {
+    border-bottom: 1px solid #b3b0b0 !important;
+}
+.howtoplay tbody tr{
+    border-top: 1px solid #b3b0b0;
+}
+.howtoplay tbody th{
+    border-top: 1px solid #b3b0b0;
+}
+
+.howtoplay .list-inline-item.fill-color {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(90.3deg, #C70C0C -0.61%, #5F0404 100.37%);
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: auto;
+    color: #fff;
+    font-weight: 600;
+    padding-top: 4px;
+    font-size: 12px;
+}
+.howtoplay .list-inline-item.fill-color-outline{
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.howtoplay .list-inline-item.no-fill-color{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    text-align: center;
+   
+    color: #000;
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: relative;
+    top: -3px;
+}
+
+
+@media (max-width: 768px){
+ .howtoplay .list-inline{
+  
+        margin-bottom: 0px !important;
+        display: inline-flex; 
+ }
+ .howtoplay .list-inline-item.no-fill-color{
+    top: -6px;
+}
+}
