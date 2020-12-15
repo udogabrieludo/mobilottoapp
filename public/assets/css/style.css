@@ -7,8 +7,8 @@
 
 /*--------------------------------------------------------------
 # General
---------------------------------------------------------------*/
-@import url('https://fonts.cdnfonts.com/css/cunia');
+--------------------------------------------------------------
+@import url('https://fonts.cdnfonts.com/css/cunia');*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -395,7 +395,6 @@ About Us
 
 .badge {
   display: inline-block;
-  
   font-size: .8rem !important;
   font-weight: 700;
   line-height: 1;
@@ -408,6 +407,10 @@ About Us
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
@@ -2491,9 +2494,9 @@ background:#BA0B0B !important;
 }
 @media (max-width:800px){
   .hero-bodycontent .next-draw {
-     border-left: 0px solid #000; 
+     border-left: 0px solid #000 !important; 
     padding-left: 6rem;
-    border-right: 0px solid #000;
+    border-right: 0px solid #000 !important;
     padding-right: 6rem;
 }
 .playnow {
@@ -2504,7 +2507,7 @@ background:#BA0B0B !important;
 }
 .playnow-content {
   background: #0080004f;
-  width: 40%;
+  width: 40% !important;
  
 }
 }

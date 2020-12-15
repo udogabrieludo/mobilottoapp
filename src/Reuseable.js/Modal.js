@@ -46,7 +46,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <div className="row  px-3">
                 <div className="col-md-6">
                 <label className="radio">
-                   <span style={{ fontFamily: "cunia" }}>START A SYNDICATE</span>{" "}
+                   <span style={{ fontFamily: "poppins", fontWeight:"700" }}>START A SYNDICATE</span>{" "}
                   <p style={{ fontSize: "14px" }}>
                     You can start a syndicate with your colleages and family to
                     increase your chances of winning
@@ -61,7 +61,7 @@ export const Modal = ({ showModal, setShowModal }) => {
               </div>
               <div className="col-md-6">
                 <label className="radio">
-                  <span style={{ fontFamily: "cunia" }}>JOIN A SYNDICATE</span>{" "}
+                  <span style={{ fontFamily: "poppins", fontWeight:"700" }}>JOIN A SYNDICATE</span>{" "}
                   <p style={{ fontSize: "14px" }}>
                     You can join a number of syndicates already created by
                     mobilotto

@@ -71,7 +71,7 @@ const Syndicate = () => {
       </div>
       
         <div className="syndicate-section">
-          <div className="container  d-flex align-items-center justify-content-between text-white h-100" style={{fontFamily:"cunia"}}>
+          <div className="container  d-flex align-items-center justify-content-between text-white h-100" style={{fontFamily:"poppins", fontWeight:"700"}}>
             <div className="text-uppercase" ><h6>start / join the syndicate and stand a greater chance</h6></div>
             <div className="">
               <button type="button" onClick={displayPopup} className="btn btn-light text-uppercase text-danger">
