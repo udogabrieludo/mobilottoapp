@@ -128,8 +128,8 @@ const Home = () => {
               </div>
               <div className="playnow">
                 <div className="playnow-content d-flex align-content-center justify-content-between">
-                  <span className="px-3 pt-2">Unlimited Ticket*</span>
-                  <button type="button" className="btn btn-success" onClick={handleClick}>
+                  <span className="px-3 pt-2 sub-title">Unlimited Ticket*</span>
+                  <button type="button " className="btn btn-success sub-title" onClick={handleClick}>
                     Play Now
                   </button>
                 </div>
@@ -141,11 +141,11 @@ const Home = () => {
 
         <div id="featured-services " className="featured-services result-list">
           <div className="container mb-3 pt-5 d-flex justify-content-between  text-white">
-            <div className="text-uppercase">Top Games</div>
+            <div className="text-uppercase sub-title">Top Games</div>
             <div className="">
-              <button type="button" className="btn btn-outline-light text-uppercase">
+              <a type="button" className="btn btn-outline-light text-uppercase sub-title" >
                 See All
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -156,9 +156,9 @@ const Home = () => {
           <div className="container pt-md-5 ">
             <div id="featured-services " className="featured-services">
               <div className="container px-0 mb-5 d-flex justify-content-between text-white">
-                <div className="text-uppercase">Why choose Mobilotto</div>
+                <div className="text-uppercase sub-title">Why choose Mobilotto</div>
                 <div className="">
-                  <button type="button" className="btn btn-outline-light text-uppercase">
+                  <button type="button" className="btn btn-outline-light sub-title text-uppercase">
                     Read about us
                   </button>
                 </div>
