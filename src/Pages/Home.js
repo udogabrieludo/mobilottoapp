@@ -6,6 +6,8 @@ import useTypewriter from "react-typewriter-hook";
 import Countdown from "./Countdown";
 import Winnerlist from './Winnerlist';
 import {useHistory} from 'react-router-dom'
+import Headers from "../Menu.js/Headers";
+import MenuBar from '../Menu.js/MenuBar'
 
 const MagicOcean = ["Play", "Win", "Instant Pay", "Cashout"];
 let index = 0;
@@ -38,7 +40,7 @@ const Home = () => {
   return (
     
     <section  className="wrapper">
-      <Header />
+      <MenuBar />
 
       {/* ======= Hero Section ======= */}
       {/* <section

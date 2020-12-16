@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   const signup = () => (
-    <section className="wrapper"  style={{ height: "100vh" }}>
+    <section className="wrapper auth-wrapper">
     <div className="container">
       <div
         className="d-flex justify-content-center align-items-center "

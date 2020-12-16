@@ -428,9 +428,9 @@ About Us
   -ms-border-radius: 200px;
   -o-border-radius: 200px;
 } */
-.hero-slide{
+/* .hero-slide{
   padding-top: 2rem !important;
-}
+} */
 .hero-bodycontent {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
@@ -485,12 +485,19 @@ color: #BA0B0B;
 }
 .playnow-content{
 background:#0080004f;
+
 }
 .playnow span{
   font-weight: 600;
     color: #0c0c0c;
     font-size: .8rem;
     
+}
+
+.auth-wrapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 /* .btn-success {
   color: #fff;
@@ -988,7 +995,7 @@ button:focus {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   overflow: hidden;
 }
 
@@ -1839,8 +1846,8 @@ background:#BA0B0B !important;
     padding-left: 6rem;
     border-right: 0px solid #000; 
     padding-right: 6rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.137);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    border-top: 0px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.137);
     margin-bottom: 1rem;
 
 }
@@ -2525,7 +2532,7 @@ background:#BA0B0B !important;
   }
   .playnow-content {
     background: #0080004f;
-    width: 50%;
+    width: 60% !important;
    
   }
   
@@ -2550,8 +2557,8 @@ background:#BA0B0B !important;
     padding-left: 6rem;
     border-right: 0px solid #000; 
     padding-right: 6rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.137);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    border-top: 0px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.137);
     margin-bottom: 1rem;
 
 }
@@ -2581,7 +2588,7 @@ background:#BA0B0B !important;
 }
 .playnow-content {
   background: #0080004f;
-  width: 100%;
+  width: 80% !important;
  
 }
 }
@@ -2593,4 +2600,8 @@ background:#BA0B0B !important;
     background: url(/images/herobg.svg);
     background-repeat: repeat;
 } */
+.playnow-content {
+  background: #0080004f;
+  width: 90% !important;
+}
 }

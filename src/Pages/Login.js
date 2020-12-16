@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
 const Login = () => {
 
 
   const signin = () => (
-    <section className="wrapper"  style={{ height: "100vh" }}>
+    <section className="wrapper auth-wrapper">
+  
     <div className="container">
+     
       <div  className="d-flex justify-content-center align-items-center ">
         <div className="col-md-5 col-sm-12 py-4" style={{ background: "#fff" }}>
           <h1 className="logo text-center">

@@ -17,6 +17,7 @@ import Privacy from './Pages/Privacy'
 import Terms from './Pages/Terms'
 import Jackpot from './Pages/Jackpot'
 import CustomTab from './Reuseable.js/CustomTab'
+import Test from './Pages/Test'
 
 const Routes = () => {
     return (
@@ -33,6 +34,7 @@ const Routes = () => {
             <Route exact path="/terms" component={Terms} />
             <Route exact path="/privacy" component={Privacy} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/test" component={Test} />
             <Route exact path="/faqs" component={Faqs} />
             <Route exact path="/tabs" component={CustomTab} />
             <Route exact path="/supermillion-jackpot" component={Jackpot} />
