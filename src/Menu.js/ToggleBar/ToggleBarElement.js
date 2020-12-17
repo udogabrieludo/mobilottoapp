@@ -28,7 +28,7 @@ left: ${({isOpen})=>(isOpen? '0': "-100%")};
 
 `
 
-export const Icon = styled.div`
+export const Icons = styled.div`
 
 position:absolute;
 top:1.2rem;
@@ -62,14 +62,14 @@ padding-left:0px !important;
 export const SidebarLink = styled(LinkR)`
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:flex-start;
 font-size:1rem;
 text-transform:uppercase;
 text-decoration: none;
 color:#fff;
 
 font-family:poppins;
-font-weight:600;
+font-weight:400;
 list-style:none;
 transition: .2s ease-in-out;
 cursor:pointer;
@@ -77,6 +77,10 @@ cursor:pointer;
 &:hover{
     transition: .2s ease-in-out;
     color:#d3d3d3;
+}
+
+@media (max-width: 480px){
+    font-size: .8rem
 }
 
 `
