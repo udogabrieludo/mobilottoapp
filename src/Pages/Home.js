@@ -140,7 +140,7 @@ const Home = () => {
         </div>
 
         <div id="featured-services " className="featured-services result-list">
-          <div className="container mb-3 pt-5 d-flex justify-content-between  text-white">
+          <div className="container mb-3 pt-5 d-flex  align-items-center justify-content-between  text-white">
             <div className="text-uppercase sub-title">Top Games</div>
             <div className="">
               <a type="button" className="btn btn-outline-light text-uppercase sub-title" >
@@ -155,7 +155,7 @@ const Home = () => {
         <section className="pt-5 about-session">
           <div className="container pt-md-5 ">
             <div id="featured-services " className="featured-services">
-              <div className="container px-0 mb-5 d-flex justify-content-between text-white">
+              <div className="container px-0 mb-5 d-flex justify-content-between align-items-center text-white">
                 <div className="text-uppercase sub-title">Why choose Mobilotto</div>
                 <div className="">
                   <button type="button" className="btn btn-outline-light sub-title text-uppercase">
