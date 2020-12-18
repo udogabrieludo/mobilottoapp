@@ -14,10 +14,10 @@ const ToggleBar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                      <SidebarLink to="/" onClick={toggle}>
-                     <Icon.Codesandbox size={16} />  <span className="pl-3">Games  </span>
+                     <Icon.Codesandbox size={16} />  <span className="pl-3">Games <Icon.ChevronDown size={16}/> </span>
                      </SidebarLink>
                      <SidebarLink to="/" onClick={toggle}>
-                     <Icon.Grid size={16} />  <span className="pl-3">Result  </span>
+                     <Icon.Grid size={16} />  <span className="pl-3">Result <Icon.ChevronDown size={16}/> </span>
                      </SidebarLink>
                      <SidebarLink to="/syndicate" onClick={toggle}>
                     <Icon.Award size={16} />  <span className="pl-3">Syndicate  </span>

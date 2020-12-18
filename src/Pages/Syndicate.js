@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import Header from "../Menu.js/Header";
+import MenuBar from '../Menu.js/MenuBar'
 import Footer from '../Menu.js/Footer'
 import Accordion from "../Reuseable.js/Accordion";
 import {accordionContents} from './ListContent'
@@ -18,10 +19,10 @@ const Syndicate = () => {
 
   return (
     <div>
-      <Header />
+      <MenuBar />
       <div
         className="container d-flex align-items-center justify-content-center"
-        style={{ paddingTop: "10rem" }}
+        style={{ paddingTop: "1rem" }}
       >
         <div className="row">
           <div className="col-12">

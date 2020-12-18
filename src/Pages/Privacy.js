@@ -195,7 +195,7 @@ const Privacy = () => {
         <div className="col-md-8">
             <div className="pl-4">
            <div id="intro">
-            <h4 className="text-danger"><strong>INTRODUCTION</strong></h4>
+            <h4 className="text-danger">INTRODUCTION</h4>
             <p>
                 These Website Standard Terms and Conditions written on this webpage
                 shall manage your use of our website, Webiste Name accessible at
@@ -208,7 +208,7 @@ const Privacy = () => {
             </p>
            </div>
            <div id="intellect">
-               <h4 className="text-danger text-uppercase"><strong>Intellectual Property Rights</strong></h4>
+               <h4 className="text-danger text-uppercase">Intellectual Property Rights</h4>
                <p>
                Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
 
@@ -216,7 +216,7 @@ const Privacy = () => {
                </p>
            </div>
            <div id="restriction">
-               <h4 className="text-danger text-uppercase"><strong> Restrictions</strong></h4>
+               <h4 className="text-danger text-uppercase">Restrictions</h4>
                <p>
                Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
 
@@ -224,7 +224,7 @@ const Privacy = () => {
                </p>
            </div>
            <div id="content">
-            <h4 className="text-danger text-uppercase"><strong> Your Content</strong></h4>
+            <h4 className="text-danger text-uppercase"> Your Content</h4>
             <p>
             In these Website Standard Terms and Conditions, “Your Content” shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Company Name a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.
 
@@ -232,14 +232,14 @@ const Privacy = () => {
             </p>
            </div>
            <div id="warranty">
-            <h4 className="text-danger text-uppercase"><strong>  No warranties</strong></h4>
+            <h4 className="text-danger text-uppercase">  No warranties</h4>
             <p>
             This Website is provided “as is,” with all faults, and Company Name express no representations or warranties, of any kind related to this Website or the materials contained on this Website.
              Also, nothing contained on this Website shall be interpreted as advising you.
             </p>
            </div>
            <div id="limitation">
-            <h4 className="text-danger text-uppercase"><strong> Limitation of liability</strong></h4>
+            <h4 className="text-danger text-uppercase">Limitation of liability</h4>
             <p>
             This Website is provided “as is,” with all faults, and Company Name express no representations or warranties, of any kind related to this Website or the materials contained on this Website.
              Also, nothing contained on this Website shall be interpreted as advising you.

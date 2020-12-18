@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import Header from "../Menu.js/Header";
 import ImageCarousel from "./ImageCarousel";
 import Footer from "../Menu.js/Footer";
 import useTypewriter from "react-typewriter-hook";
 import Countdown from "./Countdown";
 import Winnerlist from './Winnerlist';
 import {useHistory} from 'react-router-dom'
-import Headers from "../Menu.js/Headers";
 import MenuBar from '../Menu.js/MenuBar'
 
 const MagicOcean = ["Play", "Win", "Instant Pay", "Cashout"];

@@ -8,6 +8,7 @@ import "./Accordion.css";
 export const Modal = ({ showModal, setShowModal }) => {
   const lists = [
     {
+      
       img: "/assets/img/img-1.png",
     },
     {
@@ -41,7 +42,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                   >
                     <span className="closeModal" onClick={()=>(
                         setShowModal(!showModal)
-                    )}>X
+                    )}><Icon.X size={16} />
                     </span>
                 <div className="row  px-3">
                 <div className="col-md-6">
@@ -86,6 +87,7 @@ export const Modal = ({ showModal, setShowModal }) => {
                         <div className=" img-box">
                           <img src={list.img} className="img-fluid" alt="" />
                         </div>
+                       
                       </div>
                     ))}
                 </div>

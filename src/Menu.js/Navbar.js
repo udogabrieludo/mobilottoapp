@@ -106,9 +106,9 @@ border-bottom:3px solid transparent;
      border-bottom: 3px solid #BA0B0B;
  }
  &:hover{
-    color:green;
+    color:#BA0B0B;
     transition: all .2s ease-in-out;
-    border-bottom: 3px solid #BA0B0B;
+    /* border-bottom: 3px solid #BA0B0B; */
 
 }
 

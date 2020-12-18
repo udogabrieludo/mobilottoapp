@@ -80,13 +80,13 @@ const Jackpot = () =>{
        
   <ul className="nav nav-tabs tab-list pb-2">
     <li className="nav-item">
-      <a className="nav-link active" onClick={handleClick} className={active === 0 ? 'is-active': 'not-active'}  id={0}>PLAY SUPERMILLION</a>
+      <a  onClick={handleClick} className={active === 0 ? 'is-active': 'not-active'}  id={0}>PLAY SUPERMILLION</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" onClick={handleClick} className={active === 1 ? 'is-active': 'not-active'} id={1}>RESULTS</a>
+      <a  onClick={handleClick} className={active === 1 ? 'is-active': 'not-active'} id={1}>RESULTS</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" onClick={handleClick} className={active === 2 ? 'is-active': 'not-active'} id={2}>HOW TO PLAY</a>
+      <a onClick={handleClick} className={active === 2 ? 'is-active': 'not-active'} id={2}>HOW TO PLAY</a>
     </li>
   </ul>
  

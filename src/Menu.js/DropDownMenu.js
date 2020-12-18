@@ -1,80 +1,54 @@
-import React,{useState, useRef} from 'react'
-import {FaBars} from 'react-icons/fa'
+import React, {useState, useRef} from 'react'
+import './DropDown.css'
 import * as Icon from 'react-feather'
-import { useDetectOutsideClick } from "./useDetectOutsideClick";
 import { Content } from "../Reuseable.js/Tab"
-import {Nav, NavbarContainer, NavLogo,ImgLogo, MobileIcon, NavMenu, NavItems,NavLinks, NavBtn, NavBtnLink, NavBtnLinkL} from './Navbar'
-import DropDownMenu from './DropDownMenu';
+import { useDetectOutsideClick } from "./useDetectOutsideClick";
 
-const Headers = ({toggle}) => {
+const DropDownMenu = () => {
 
-  const dropdownRef = useRef(null);
+    const [active, setActive] = useState(0);
+    const handleClick = e => {
+      const index = parseInt(e.target.id, 0);
+      if (index !== active) {
+        setActive(index);
+      }
+    };
+    const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
-  const [active, setActive] = useState(0);
-  const handleClick = e => {
-    const index = parseInt(e.target.id, 0);
-    if (index !== active) {
-      setActive(index);
-    }
-  };
 
-  const lists = [
-    {
-        name:"SUPERWIN",
-      img: "/assets/img/img-1.png",
-    },
-    {
-        name:"SUPERWIN",
-      img: "/assets/img/img-3.png",
-    },
-    {
-        name:"SUPERWIN",
-      img: "/assets/img/img-2.png",
-    },
-    {
-        name:"SUPERWIN",
-      img: "/assets/img/img-4.png",
-    },
-    {
-        name:"SUPERWIN",
-        img: "/assets/img/img-2.png",
-     },
-    {
-        name:"SUPERWIN",
-        img: "/assets/img/img-1.png",
-    },
-  ];
+    const lists = [
+        {
+            name:"SUPERWIN",
+          img: "/assets/img/img-1.png",
+        },
+        {
+            name:"SUPERWIN",
+          img: "/assets/img/img-3.png",
+        },
+        {
+            name:"SUPERWIN",
+          img: "/assets/img/img-2.png",
+        },
+        {
+            name:"SUPERWIN",
+          img: "/assets/img/img-4.png",
+        },
+        {
+            name:"SUPERWIN",
+            img: "/assets/img/img-2.png",
+         },
+        {
+            name:"SUPERWIN",
+            img: "/assets/img/img-1.png",
+        },
+      ];
 
-
-  return (
-    <>
-     <Nav>
-        <NavbarContainer>
-                <NavLogo to="/">
-                  <ImgLogo src="/logo.png" alt="logo" />
-                </NavLogo>
-                <MobileIcon onClick={toggle}>
-                  <FaBars />
-                </MobileIcon>
-                <NavMenu>
-                  <NavItems>
-                      <NavLinks to="/" onClick={onClick}>Games <Icon.ChevronDown size={16}/></NavLinks>
-                      <NavLinks to="/">Results <Icon.ChevronDown size={16}/></NavLinks>
-                      <NavLinks to="/syndicate">Syndicate </NavLinks>
-                      <NavLinks to="/">Ty Games</NavLinks>
-                  </NavItems>
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLinkL to="/login">Sign in</NavBtnLinkL>
-                    <NavBtnLink to='/signup'>Open an Account</NavBtnLink>
-                </NavBtn>
-            </NavbarContainer>
-           
-        </Nav>
-          <div className="container d-flex justify-content-center">
+    return (
+        <>
+              <div className="container d-flex justify-content-center">
                   <div className="col-md-10 ">
-                  <div   className={`menu row ${isActive ? "active" : "inactive"} `}>
+                  <div className="row"  className={`menu ${isActive ? "active" : "inactive"}`}>
   <div className="col-3 pl-0">
     <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a className="nav-link active d-flex justify-content-between" id="v-pills-home-tab" data-toggle="pill"  aria-selected="true" >LOTTERY 
@@ -97,7 +71,7 @@ const Headers = ({toggle}) => {
     <div className="tab-content py-3" id="v-pills-tabContent">
       <Content  active={active === 0}>
       <div>
-  <ul className="nav  nav-tab mb-3" id="pills-tab" role="tablist">
+  <ul className="nav nav-pills nav-tab mb-3" id="pills-tab" role="tablist">
     <li className="nav-item">
       <a className="nav-link active" id="pills-home-tab" data-toggle="pill"
        href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HOURLY</a>
@@ -140,8 +114,8 @@ const Headers = ({toggle}) => {
 
               </div>
 
-    </>
-  )
+        </>
+    )
 }
 
-export default Headers
+export default DropDownMenu
