@@ -10,7 +10,7 @@ const Headers = ({toggle}) => {
 
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
-  const onClick = () => setIsActive(!isActive);
+  // const onClick = () => setIsActive(!isActive);
   const [active, setActive] = useState(0);
   const handleClick = e => {
     const index = parseInt(e.target.id, 0);
@@ -47,6 +47,23 @@ const Headers = ({toggle}) => {
   ];
 
 
+  const onMouseEnter = () =>{
+    if(window.innerWidth < 769){
+      setIsActive(false)
+    }
+
+    setIsActive(true)
+  }
+
+  
+  const onMouseLeave = () =>{
+    if(window.innerWidth < 769){
+      setIsActive(false)
+    }
+
+    setIsActive(false)
+  }
+
   return (
     <>
      <Nav>
@@ -59,7 +76,7 @@ const Headers = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                      <NavLinks to="/" onClick={onClick}>Games <Icon.ChevronDown size={16}/></NavLinks>
+                      <NavLinks to="/"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Games <Icon.ChevronDown size={16}/></NavLinks>
                       <NavLinks to="/">Results <Icon.ChevronDown size={16}/></NavLinks>
                       <NavLinks to="/syndicate">Syndicate </NavLinks>
                       <NavLinks to="/">Ty Games</NavLinks>
@@ -73,8 +90,8 @@ const Headers = ({toggle}) => {
            
         </Nav>
           <div className="container d-flex justify-content-center">
-                  <div className="col-md-10 ">
-                  <div   className={`menu row ${isActive ? "active" : "inactive"} `}>
+            <div className="col-md-10 ">
+          <div  ref={dropdownRef}   onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={`menu row ${isActive ? "active" : "inactive"} `}>
   <div className="col-3 pl-0">
     <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a className="nav-link active d-flex justify-content-between" id="v-pills-home-tab" data-toggle="pill"  aria-selected="true" >LOTTERY 
