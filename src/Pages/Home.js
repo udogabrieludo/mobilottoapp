@@ -94,24 +94,24 @@ const Home = () => {
               <div className="carousel-item active">
                 <img
                   className="d-block w-100"
-                  src="/images/slide1.jpg"
+                  src="/images/img-bg.png"
                   alt="First slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   className="d-block w-100"
-                  src="/images/slide1.jpg"
+                  src="/images/slide2.png"
                   alt="Second slide"
                 />
               </div>
-              <div className="carousel-item">
+              {/* <div className="carousel-item">
                 <img
                   className="d-block w-100"
                   src="/images/slide2.jpg"
                   alt="Third slide"
                 />
-              </div>
+              </div> */}
             </div>
             <a
               className="carousel-control-prev"
