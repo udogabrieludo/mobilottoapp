@@ -10,7 +10,7 @@ const Headers = ({toggle}) => {
 
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
-  // const onClick = () => setIsActive(!isActive);
+  const dropDown = () => setIsActive(!isActive);
   const [active, setActive] = useState(0);
   const handleClick = e => {
     const index = parseInt(e.target.id, 0);
@@ -76,7 +76,7 @@ const Headers = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                      <NavLinks to="/"  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Games <Icon.ChevronDown size={16}/></NavLinks>
+                      <NavLinks to="/" onClick={dropDown} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Games <Icon.ChevronDown size={16}/></NavLinks>
                       <NavLinks to="/">Results <Icon.ChevronDown size={16}/></NavLinks>
                       <NavLinks to="/syndicate">Syndicate </NavLinks>
                       <NavLinks to="/">Ty Games</NavLinks>
