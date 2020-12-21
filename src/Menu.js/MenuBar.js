@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ToggleBar from './ToggleBar/ToggleBar'
 import Headers from './Headers'
+import Topbar from './Topbar'
 
 const MenuBar = () => {
 
@@ -14,7 +15,8 @@ const toggle = () =>{
 }
 
     return (
-        <>
+        <> 
+           <Topbar />
            <ToggleBar isOpen={isOpen} toggle={toggle}  /> 
            <Headers toggle={toggle}/>
         </>
