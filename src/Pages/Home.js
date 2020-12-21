@@ -3,21 +3,19 @@ import ImageCarousel from "./ImageCarousel";
 import Footer from "../Menu.js/Footer";
 import useTypewriter from "react-typewriter-hook";
 import Countdown from "./Countdown";
-import Winnerlist from './Winnerlist';
-import {useHistory} from 'react-router-dom'
-import MenuBar from '../Menu.js/MenuBar'
+import Winnerlist from "./Winnerlist";
+import { useHistory } from "react-router-dom";
+import MenuBar from "../Menu.js/MenuBar";
 
 const MagicOcean = ["Play", "Win", "Instant Pay", "Cashout"];
 let index = 0;
 
 const Home = () => {
-
   let history = useHistory();
 
   function handleClick() {
     history.push("/supermillion-jackpot");
   }
-
 
   const [magicName, setMagicName] = useState("Play");
   const intervalRef = useRef({});
@@ -34,10 +32,8 @@ const Home = () => {
     };
   }, []);
 
- 
   return (
-    
-    <section  className="wrapper">
+    <section className="wrapper">
       <MenuBar />
 
       {/* ======= Hero Section ======= */}
@@ -89,59 +85,94 @@ const Home = () => {
       {/* End Hero */}
       <main id="main">
         <div className="main-hero">
-        <div id="carouselExampleControls" className="carousel slide hero-slide" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100" src="/images/img-bg.png" alt="First slide"  />
+          <div
+            id="carouselExampleControls"
+            className="carousel slide hero-slide"
+            data-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  className="d-block w-100"
+                  src="/images/slide1.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100"
+                  src="/images/slide1.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100"
+                  src="/images/slide2.jpg"
+                  alt="Third slide"
+                />
+              </div>
             </div>
-   {/*  <div className="carousel-item">
-      <img className="d-block w-100" src="..." alt="Second slide" />
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src="..." alt="Third slide" />
-    </div> */}
-  </div>
-  <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="sr-only">Next</span>
-  </a>
-</div>
-<div style={{background:"#fff"}}>
-<div className="container">
-            <div className="hero-bodycontent text-center d-lg-flex align-items-center justify-content-around ">
-              <div className="jackpock ">
-                <h6 className="mb-0">Supermillion Jackpot</h6>
-                <h3 className="mb-0">N2,398,000</h3>
-              </div>
-              <div className="next-draw">
-                <h6 className="mb-0">Next Draw </h6>
-                <div className="mb-0">
-                  {" "}
-                  <Countdown className="countdown-wrapper dark-text"/>
+            <a
+              className="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <span className="sr-only">Previous</span>
+            </a>
+            <a
+              className="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span className="carousel-control-next-icon" aria-hidden="true" />
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
+          <div style={{ background: "#fff" }}>
+            <div className="container">
+              <div className="hero-bodycontent text-center d-lg-flex align-items-center justify-content-around ">
+                <div className="jackpock ">
+                  <h6 className="mb-0">Supermillion Jackpot</h6>
+                  <h3 className="mb-0">N2,398,000</h3>
                 </div>
-              </div>
-              <div className="playnow">
-                <div className="playnow-content d-flex align-content-center justify-content-between">
-                  <span className="px-3 pt-2 sub-title">Unlimited Ticket*</span>
-                  <button type="button " className="btn btn-success sub-title" onClick={handleClick}>
-                    Play Now
-                  </button>
+                <div className="next-draw">
+                  <h6 className="mb-0">Next Draw </h6>
+                  <div className="mb-0">
+                    {" "}
+                    <Countdown className="countdown-wrapper dark-text" />
+                  </div>
+                </div>
+                <div className="playnow">
+                  <div className="playnow-content d-flex align-content-center justify-content-between">
+                    <span className="px-3 pt-2 sub-title">
+                      Unlimited Ticket*
+                    </span>
+                    <button
+                      type="button "
+                      className="btn btn-success sub-title"
+                      onClick={handleClick}
+                    >
+                      Play Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-</div>
         </div>
 
         <div id="featured-services " className="featured-services result-list">
           <div className="container mb-3 pt-5 d-flex  align-items-center justify-content-between  text-white">
             <div className="text-uppercase sub-title">Top Games</div>
             <div className="">
-              <a type="button" className="btn btn-outline-light text-uppercase sub-title" >
+              <a
+                type="button"
+                className="btn btn-outline-light text-uppercase sub-title"
+              >
                 See All
               </a>
             </div>
@@ -154,9 +185,14 @@ const Home = () => {
           <div className="container pt-md-5 ">
             <div id="featured-services " className="featured-services">
               <div className="container px-0 mb-5 d-flex justify-content-between align-items-center text-white">
-                <div className="text-uppercase sub-title">Why choose Mobilotto</div>
+                <div className="text-uppercase sub-title">
+                  Why choose Mobilotto
+                </div>
                 <div className="">
-                  <button type="button" className="btn btn-outline-light sub-title text-uppercase">
+                  <button
+                    type="button"
+                    className="btn btn-outline-light sub-title text-uppercase"
+                  >
                     Read about us
                   </button>
                 </div>
@@ -165,12 +201,15 @@ const Home = () => {
 
             <div className="row  pb-md-4 text-white why-choose-us text-center justify-content-sm-center ">
               <div className="col-12  col-md-3 m-auto">
-              <div className="hover-item">  <img
-                  src="/assets/img/img-5.png"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                  alt="img-4" 
-                /></div>
+                <div className="hover-item">
+                  {" "}
+                  <img
+                    src="/assets/img/img-5.png"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    alt="img-4"
+                  />
+                </div>
                 <h6 className=" mt-2 mb-3">Online Lottery</h6>
                 <p className="mt-1">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -178,12 +217,15 @@ const Home = () => {
                 </p>
               </div>
               <div className="col-12  col-md-3 m-auto">
-              <div className="hover-item">   <img
-                  src="/assets/img/img-5.svg"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  alt="img-4"
-                   /></div>
+                <div className="hover-item">
+                  {" "}
+                  <img
+                    src="/assets/img/img-5.svg"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    alt="img-4"
+                  />
+                </div>
                 <h6 className=" mt-2 mb-3">100% Secured</h6>
                 <p className="mt-1">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -191,12 +233,15 @@ const Home = () => {
                 </p>
               </div>
               <div className="col-12  col-md-3 m-auto">
-              <div className="hover-item">   <img
-                  src="/assets/img/img-6.png"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  alt="img-4"
-                /></div>
+                <div className="hover-item">
+                  {" "}
+                  <img
+                    src="/assets/img/img-6.png"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    alt="img-4"
+                  />
+                </div>
                 <h6 className=" mt-2 mb-3">Live Cashout</h6>
                 <p className="mt-1">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -204,12 +249,15 @@ const Home = () => {
                 </p>
               </div>
               <div className="col-12  col-md-3 m-auto">
-              <div className="hover-item">   <img
-                  src="/assets/img/img-7.png"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  alt="img-4"
-                /></div>
+                <div className="hover-item">
+                  {" "}
+                  <img
+                    src="/assets/img/img-7.png"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    alt="img-4"
+                  />
+                </div>
                 <h6 className=" mt-2 mb-3">Instant support</h6>
                 <p className="mt-1">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -219,13 +267,12 @@ const Home = () => {
             </div>
           </div>
         </section>
-         <div className="container">
-         <Winnerlist />
-         </div>
+        <div className="container">
+          <Winnerlist />
+        </div>
       </main>
-      <Footer className="footer-danger"/>
-      </section>
-  
+      <Footer className="footer-danger" />
+    </section>
   );
 };
 
