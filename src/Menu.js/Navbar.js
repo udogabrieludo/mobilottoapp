@@ -12,6 +12,7 @@ position: sticky;
 top:0;
 z-index:10;
 width:100%;
+border-bottom: 1px solid #e0e0e0;
 
 @media (max-width:960px){
     transition: 0.8s all ease;

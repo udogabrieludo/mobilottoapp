@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Footer from "../Menu.js/Footer";
-import Header from "../Menu.js/Header";
+import MenuBar from "../Menu.js/MenuBar";
 
 const Privacy = () => {
   const heroBanner = () => (
@@ -253,7 +253,7 @@ const Privacy = () => {
   );
   return (
     <div>
-      <Header />
+      <MenuBar />
       {heroBanner()}
       {sideTab()}
       <Footer className="footer-white" />

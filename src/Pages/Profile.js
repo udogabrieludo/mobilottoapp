@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../Menu.js/Header'
 import Footer from '../Menu.js/Footer'
 import {Link} from 'react-scroll'
 import * as Icon from 'react-feather';
+import MenuBar from '../Menu.js/MenuBar';
 
 const Profile = () => {
 
@@ -283,7 +283,7 @@ const Profile = () => {
     )
     return (
         <div>
-            <Header />
+            <MenuBar />
                  {profileBody()}
             <Footer  className="footer-danger"/>
             

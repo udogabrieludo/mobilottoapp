@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Header from "../Menu.js/Header";
 import Footer from "../Menu.js/Footer";
-
 import * as Icon from "react-feather";
 import "../Reuseable.js/Checkout.css";
+import MenuBar from "../Menu.js/MenuBar";
 
 const Checkout = () => {
 
@@ -19,7 +18,7 @@ const Checkout = () => {
 
   return (
     <div>
-      <Header />
+      <MenuBar />
       <div className="checkout-wrapper d-md-flex align-items-center mb-5 ">
         <div className="container justify-content-around ">
           <h3>

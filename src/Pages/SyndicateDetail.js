@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../Menu.js/Header";
 import Footer from "../Menu.js/Footer";
 import SyndicateCountdown from '../Reuseable.js/SyndicateCountdown'
+import MenuBar from "../Menu.js/MenuBar";
 
 const SyndicateDetail = () => {
   return (
     <div>
-      <Header />
+      <MenuBar />
       <div>
         <div className="syndicate-details">
           <div

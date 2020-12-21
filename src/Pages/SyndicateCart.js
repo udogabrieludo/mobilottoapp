@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../Menu.js/Header";
+import MenuBar  from "../Menu.js/MenuBar";
 import Footer from "../Menu.js/Footer";
 import { Link } from "react-router-dom";
 import SyndicateCountdown from "../Reuseable.js/SyndicateCountdown";
@@ -147,7 +147,7 @@ const SyndicateCart = () => {
 
   const syndicate = ()=>(
       <>
-      <Header />
+      <MenuBar />
       <div>
         <div className="syndicate-details">
           <div

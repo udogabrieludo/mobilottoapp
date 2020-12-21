@@ -191,7 +191,6 @@ About Us
   height: 38vh;
   background: url("/images/herobg.svg");
   background-repeat: repeat;
-  padding-top: 10rem;
 
 }
 
@@ -207,7 +206,7 @@ About Us
   position: fixed;
   left: 0px;
   bottom: 0px;
-  z-index: 9999;
+  z-index: 1;
   height: 12vh;
   background: url("/images/syndicate.svg");
   background-repeat: repeat;
@@ -216,9 +215,7 @@ About Us
 }
 .syndicate-details {
   width: 100%;
-  margin-top: 3rem;
   height: 14vh;
-  margin-top: 7rem;
   background: url(/images/syndicate.svg);
   background-repeat: repeat;
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Menu.js/Header";
 import Footer from "../Menu.js/Footer";
 import Resultlist from '../Reuseable.js/Resultslist'
+import MenuBar from "../Menu.js/MenuBar";
 
 const Results = () => {
   const heroBanner = () => (
@@ -21,7 +21,7 @@ const Results = () => {
   
   return (
     <div>
-      <Header />
+      <MenuBar />
 
       {heroBanner()}
       <Resultlist showFirst={true} ShowSecond={true} className="col-md-8" />

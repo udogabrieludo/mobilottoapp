@@ -4,8 +4,12 @@
     height: 70vh;
     background: url(/images/herobg.svg);
     background-repeat: repeat;
-    padding-top: 10rem;
+    
 }
+.jackpot-main{
+margin-top:-29rem
+}
+
 .jackpot-header h1{
     font-size: 5.7rem;
 }

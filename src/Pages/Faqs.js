@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../Menu.js/Header";
 import Footer from "../Menu.js/Footer";
 import Accordion from "../Reuseable.js/Accordion";
 import {accordionContentss} from './ListContent';
+import MenuBar from "../Menu.js/MenuBar";
 
 
 const Faqs = () => {
@@ -93,7 +93,7 @@ const Faqs = () => {
 
   return (
     <div>
-      <Header />
+      <MenuBar />
 
       {heroBanner()}
       {Content()}

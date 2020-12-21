@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../Menu.js/Header";
 import Footer from '../Menu.js/Footer'
 import * as Icon from 'react-feather';
 import {Link} from 'react-router-dom';
 import './Dashboard.css'
+import MenuBar from "../Menu.js/MenuBar";
 
 
 
 const Dashboard = () => {
   return (
     <>
-    <Header />
+    <MenuBar />
     <div className="container-fluid dashboard-wrapper">
         <div className="col-md-8 dashboard-header pb-4">
         <h4>MY DASHBOARD</h4>

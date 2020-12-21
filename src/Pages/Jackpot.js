@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
 import '../Reuseable.js/Jackpot.css'
-import Header from '../Menu.js/Header'
 import Footer from '../Menu.js/Footer'
 import Countdown from './Countdown'
 import { Content } from "../Reuseable.js/Tab"
 import Resultlist from '../Reuseable.js/Resultslist'
 import Howtoplay from '../Reuseable.js/Howtoplay';
 import * as Icon from "react-feather";
+import MenuBar from '../Menu.js/MenuBar';
 
 
 const Jackpot = () =>{
@@ -66,7 +66,7 @@ const Jackpot = () =>{
 
    const heroContent =()=>(
     <div className="container mt-3">
-    <div className="row" style={{marginTop:"-24rem"}}> 
+    <div className="row jackpot-main" > 
     <div className="col-md-4 text-center text-white jackpot-header">
     <small>Next Draw Date , Fri, Dec 24 Jackpot</small>
         <h2><strong>SUPER MILLION</strong></h2>
@@ -375,7 +375,7 @@ const Jackpot = () =>{
   return(
 
   <div>
- <Header />
+ <MenuBar />
   {heroBanner()}
   {heroContent()}
   {main()}
