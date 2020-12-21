@@ -2496,6 +2496,25 @@ background:#BA0B0B !important;
   background: #dc354594;
   color: #fff;
 }
+@media (max-width:960px){
+  .hero-bodycontent .next-draw {
+     border-left: 0px solid #dee2e6 ;
+     padding-left: 0rem; 
+     border-right: 0px solid #dee2e6; 
+     padding-right: 0rem;
+}
+.playnow {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.playnow-content {
+  background: #0080004f;
+  width: 40% !important;
+ 
+}
+}
 @media (max-width:800px){
   .hero-bodycontent .next-draw {
      border-left: 0px solid #000 !important; 
