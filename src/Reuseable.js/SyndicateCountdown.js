@@ -1,7 +1,7 @@
 import React,{ useState, useEffect} from 'react'
 
 const SyndicateCountdown = ({className}) => {
-    const [countdownDate, setCountdownDate] = useState(new Date('12/27/2020').getTime());
+    const [countdownDate, setCountdownDate] = useState(new Date('12/27/2022').getTime());
 
     //  const [countdownDate, setCountdownDate] = useState(new Date().setHours(60));
     const [state, setState] = useState({
