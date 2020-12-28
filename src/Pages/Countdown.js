@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 
 const Countdown = ({className}) => {
-  const [countdownDate, setCountdownDate] = useState(new Date('12/27/2022').getTime());
+  const [countdownDate, setCountdownDate] = useState(new Date('1/27/2021').getTime());
 
   //  const [countdownDate, setCountdownDate] = useState(new Date().setHours(60));
   const [state, setState] = useState({
@@ -17,8 +17,10 @@ const Countdown = ({className}) => {
    //return () => clearInterval(tick) 
   }, []);
 
+ 
+
   const setNewTime = () => {
-    if (countdownDate) {
+    if (countdownDate ) {
       const currentTime = new Date().getTime();
 
       const distanceToDate = countdownDate - currentTime;
@@ -60,21 +62,21 @@ const Countdown = ({className}) => {
           <div className='time'>:</div>
         </div>*/}
         <div className='time-section'>
-          <div className='time'>{state.hours || '00'}</div>
+          <div className='time'>{state.hours >= 0 ? state.hours || '00' : '00'}</div>
           <small className="time-text">Hours</small>
         </div>
         <div className='time-section'>
           <div className='time'>:</div>
         </div>
         <div className='time-section'>
-          <div className='time'>{state.minutes || '00'}</div>
+          <div className='time'>{state.minutes >= 0 ?state.minutes || '00' : '00'}</div>
           <small className="time-text">Minutes</small>
         </div>
         <div className='time-section'>
           <div className='time'>:</div>
         </div>
         <div className='time-section'>
-          <div className='time'>{state.seconds || '00'}</div>
+          <div className='time'>{state.seconds >=0 ?state.seconds || '00' : "00"}</div>
           <small className="time-text">Seconds</small>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React,{ useState, useEffect} from 'react'
 
 const SyndicateCountdown = ({className}) => {
-    const [countdownDate, setCountdownDate] = useState(new Date('12/27/2022').getTime());
+    const [countdownDate, setCountdownDate] = useState(new Date('2/27/2021').getTime());
 
     //  const [countdownDate, setCountdownDate] = useState(new Date().setHours(60));
     const [state, setState] = useState({
@@ -53,28 +53,28 @@ const SyndicateCountdown = ({className}) => {
        
         <div className={className}>
          <div className='time-section'>
-            <div className='timex'>{state.days || '0'}days</div>
+            <div className='timex'>{state.days >=0 ? state.days|| '0': "0"}days</div>
            
           </div> 
           <div className='time-section'>
             <div className='timex'>:</div>
           </div>
           <div className='time-section'>
-            <div className='timex'>{state.hours || '00'}</div>
+            <div className='timex'>{state.hours >= 0 ? state.hours || '00' : '00'}</div>
             
           </div>
           <div className='time-section'>
             <div className='timex'>:</div>
           </div>
           <div className='time-section'>
-            <div className='timex'>{state.minutes || '00'}</div>
+            <div className='timex'>{state.minutes >= 0 ? state.minutes || '00' : '00'}</div>
            
           </div>
           <div className='time-section'>
             <div className='timex'>:</div>
           </div>
           <div className='time-section'>
-            <div className='timex' style={{width:"10px"}}>{state.seconds || '00'}</div>
+            <div className='timex' style={{width:"10px"}}>{state.seconds >=0 ?state.seconds || '00' : "00"}</div>
             
           </div>
         </div>
