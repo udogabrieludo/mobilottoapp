@@ -84,6 +84,21 @@ export const NavItems = styled.li`
  display:flex;
  align-items:center;
 `
+export const NavLink =styled.a`
+ color:#000  ;
+ font-family:poppins;
+ font-size: 1rem;
+ text-decoration:none;
+ font-size: 14px;
+font-weight: 600 !important;
+padding: 0 3px;
+text-transform: uppercase;
+&:hover{
+    color:#BA0B0B;
+    transition: all .2s ease-in-out;
+}
+
+`
 
 export const NavLinks =styled(LinkR)`
  display: flex;

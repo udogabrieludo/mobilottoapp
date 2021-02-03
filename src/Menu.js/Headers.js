@@ -12,6 +12,7 @@ import {
   NavMenu,
   NavItems,
   NavLinks,
+  NavLink,
   NavBtn,
   NavBtnLink,
   NavBtnLinkL,
@@ -102,7 +103,7 @@ const Headers = ({ toggle }) => {
                 Results <Icon.ChevronDown size={16} />
               </NavLinks>
               <NavLinks to="/syndicate">Syndicate </NavLinks>
-              <NavLinks to="/">Ty Games</NavLinks>
+              <NavLink href="https://tylgames.com/" > Tyl Games</NavLink>
             </NavItems>
           </NavMenu>
           <NavBtn>
