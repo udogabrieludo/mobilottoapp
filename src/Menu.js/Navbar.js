@@ -1,5 +1,5 @@
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import {Link as LinkR} from 'react-router-dom'
 
 export const Nav = styled.nav`
@@ -91,6 +91,7 @@ export const NavLink =styled.a`
  text-decoration:none;
  font-size: 14px;
 font-weight: 600 !important;
+border-bottom:3px solid transparent;
 padding: 0 3px;
 text-transform: uppercase;
 &:hover{

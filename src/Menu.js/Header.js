@@ -49,34 +49,11 @@ const Header = () => {
                 <li className="drop-down">
                   <Link to="">Games</Link>
 
-                {/*   <ul>
-                    <li>
-                      <div className="row">
-                        <div className="col-md-6">Menu 1</div>
-                        <div className="col-md-6">Menu 2</div>
-                      </div>
-                    </li>
-                  </ul> */}
                 </li>
 
                 <li className="drop-down">
                   <Link to="">Results</Link>
-                  {/* <ul>
-                    <li>
-                      <Link to="">Drop Down 1</Link>
-                    </li>
-                    <li className="drop-down">
-                      <Link to="">Deep Drop Down</Link>
-                      <ul>
-                        <li>
-                          <Link to="">Deep Drop Down 5</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to="">Drop Down 2</Link>
-                    </li>
-                  </ul> */}
+                  
                 </li>
                 <li>
                   <Link to={`/syndicate`}>Syndicate</Link>
@@ -85,8 +62,7 @@ const Header = () => {
                 <li>
                   <Link to="">tyl Games</Link>
                 </li>
-                {/*} <li><Link to="">SIGN IN</Link></li>
-        <li><Link to="" className="btn btn-success">Open an account</Link></li>*/}
+             
               </ul>
             </nav>
             {/* .nav-menu */}

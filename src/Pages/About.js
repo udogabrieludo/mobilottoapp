@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../Menu.js/Header'
+import MenuBar from "../Menu.js/MenuBar";
 import Footer from '../Menu.js/Footer'
 import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
         <div className=" wrapper">
-            <Header />
+            <MenuBar />
             {/* ======= Hero Section ======= */}
 <section  className="d-flex align-items-center about-us justify-content-md-center">
   <div className="container text-center text-white" data-aos="zoom-out" data-aos-delay={100}>
@@ -16,7 +16,7 @@ const About = () => {
 </section>{/* End Hero */}
 <section  style={{background:"#fff"}} className="d-flex align-items-center">
   <div className="container " data-aos="zoom-out" data-aos-delay={100} style={{color:"#222"}}>
-     <div className="row pb-5">
+     <div className="row py-5">
        <div className="col-md-6 text-uppercase  d-flex align-items-center" >
           <h1> <blockquote><b>We gave lottery a new name That’s how we changed the game</b></blockquote></h1>
        </div>
